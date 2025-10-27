@@ -336,7 +336,7 @@ def sync_to_mailchimp(transformed_df, dry_run=True):
                     "Scout 1 Den",
                     "Scout 2 Den",
                     "Scout 3 Den",
-                    "Scout 1 Expiratioin",  # Note: typo exists in Mailchimp
+                    "Scout 1 Expiration",
                     "Scout 2 Expiration",
                     "Scout 3 Expiration",
                     "ADDRESS",
@@ -351,12 +351,7 @@ def sync_to_mailchimp(transformed_df, dry_run=True):
                     # Map to actual Mailchimp field names
                     mailchimp_scout_field = f"Scout {scout_num}"
                     mailchimp_den_field = f"Scout {scout_num} Den"
-
-                    # Handle expiration field name inconsistency
-                    if scout_num == 1:
-                        mailchimp_exp_field = f"Scout {scout_num} Expiratioin"
-                    else:
-                        mailchimp_exp_field = f"Scout {scout_num} Expiration"
+                    mailchimp_exp_field = f"Scout {scout_num} Expiration"
 
                     # Add scout name
                     if (

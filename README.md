@@ -86,7 +86,7 @@ python scout_mailchimp_sync.py
 3. **Syncs to Mailchimp**: Updates the following fields for each parent email:
    - Scout 1, Scout 2, Scout 3 (scout names)
    - Scout 1 Den, Scout 2 Den, Scout 3 Den
-   - Scout 1 Expiratioin, Scout 2 Expiration, Scout 3 Expiration (BSA membership expiration)
+   - Scout 1 Expiration, Scout 2 Expiration, Scout 3 Expiration (BSA membership expiration)
    - ADDRESS (family address)
 
 ### Mailchimp Field Mapping
@@ -97,7 +97,7 @@ The script maps Scoutbook data to the following Mailchimp merge fields:
 |-----------------|-----------------|-------|
 | Scout Full Name | Scout 1, Scout 2, Scout 3 | Up to 3 scouts per email |
 | Den/Grade | Scout 1 Den, Scout 2 Den, Scout 3 Den | Den or grade level |
-| BSA Expiration | Scout 1 Expiratioin*, Scout 2 Expiration, Scout 3 Expiration | *Note the typo in Scout 1 field |
+| BSA Expiration | Scout 1 Expiration, Scout 2 Expiration, Scout 3 Expiration | BSA membership expiration dates |
 | Street, City, State, Zip | ADDRESS | Combined into single field |
 
 ## Environment Variables
